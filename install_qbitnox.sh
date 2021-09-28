@@ -16,4 +16,6 @@ do
 			echo 'Inavlid option!'
 	esac
 done
+read -p 'Press enter to stop qbittorrent-nox from updating'
+sudo apt-mark hold qbittorrent-nox
 echo ************************************************************
