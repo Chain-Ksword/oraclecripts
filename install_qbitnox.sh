@@ -18,4 +18,6 @@ do
 done
 read -p 'Press enter to stop qbittorrent-nox from updating'
 sudo apt-mark hold qbittorrent-nox
+echo -e 'Add preferences to: ~/.config/qBittorrent/\nand .torrent files, logs, etc to: ~/.local/share/data/qBittorrent/'
+echo 'Make sure you have torrent data in the correct folders'
 echo ************************************************************
