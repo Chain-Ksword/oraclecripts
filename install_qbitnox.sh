@@ -20,7 +20,7 @@ do
 			chmod 700 ~/bin/qbittorrent-nox
 			break;;
 		*)
-			echo "${RED}Inavlid option!${GREEN}"
+			echo -e "${RED}Inavlid option!${GREEN}"
 	esac
 done
 echo -e "${RED}Add preferences to: \n~/.config/qBittorrent/\nand .torrent files, logs, etc to: \n~/.local/share/data/qBittorrent/${NC}"
