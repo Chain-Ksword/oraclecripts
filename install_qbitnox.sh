@@ -7,7 +7,7 @@ do
 		amd64) 
 			read -p 'Press enter to install qbittorrent-nox 4.3.7x86_64'
 			mkdir -p ~/bin && source ~/.profile
-			mv x86_64-qbittorrent-nox-4.3.7 ~/bin/qbittorrent-nox
+			mv ./x86_64-qbittorrent-nox-4.3.7 ~/bin/qbittorrent-nox
 			chmod 700 ~/bin/qbittorrent-nox
 			break;;
 		arm64)
