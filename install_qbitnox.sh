@@ -1,26 +1,28 @@
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
 echo '************************************************************'
-read -p 'Press enter to continue with installing qbittorrent-nox'
+read -p "${GREEN}Press enter to continue with installing qbittorrent-nox"
 PS3='Select if the cpu is arm64 or amd64'
 select i in amd64 arm64
 do
 	case $i in
 		amd64) 
-			read -p 'Press enter to install qbittorrent-nox 4.3.7x86_64'
+			read -p "Press enter to install qbittorrent-nox-4.3.7-x86_64"
 			mkdir -p ~/bin && source ~/.profile
 			mv ./packages/x86_64-qbittorrent-nox-4.3.7 ~/bin/qbittorrent-nox
-echo $ip
 			chmod 700 ~/bin/qbittorrent-nox
 			break;;
 		arm64)
-			read -p 'Press enter to install qbittorrent-nox 4.3.6arm64'
-			sudo apt install ./packages/qbittorrent-nox_4.3.6.99~202107121021-7389-3ac8c97e6~ubuntu20.10.1_arm64.deb -y
+			read -p 'Press enter to install qbittorrent-nox-4.3.7-aarch64'
+			mkdir -p ~/bin && source ~/.profile
+			mv ./packages/aarch64-qbittorrent-nox-4.3.7 ~/bin/qbittorrent-nox
+			chmod 700 ~/bin/qbittorrent-nox
 			break;;
 		*)
-			echo 'Inavlid option!'
+			echo "${RED}Inavlid option!${GREEN}"
 	esac
 done
-#read -p 'Press enter to stop qbittorrent-nox from updating'
-#sudo apt-mark hold qbittorrent-nox
-echo -e 'Add preferences to: ~/.config/qBittorrent/\nand .torrent files, logs, etc to: ~/.local/share/data/qBittorrent/'
-echo 'Make sure you have torrent data in the correct folders'
+echo -e "${RED}Add preferences to: \n~/.config/qBittorrent/\nand .torrent files, logs, etc to: \n~/.local/share/data/qBittorrent/${NC}"
+echo -e "${RED}Make sure you have torrent data in the correct folders${NC}"
 echo '************************************************************'
