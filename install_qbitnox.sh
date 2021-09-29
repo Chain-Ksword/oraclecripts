@@ -1,8 +1,8 @@
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
-echo '************************************************************'
-read -p "${GREEN}Press enter to continue with installing qbittorrent-nox"
+echo -e "************************************************************${GREEN}"
+read -p "Press enter to continue with installing qbittorrent-nox"
 PS3='Select if the cpu is arm64 or amd64'
 select i in amd64 arm64
 do
