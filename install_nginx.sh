@@ -1,6 +1,7 @@
-ip=$(dig TXT +short o-o.myaddr.l.google.com @ns1.google.com | grep -o "[^\"]\+")
+#ip=$(dig TXT +short o-o.myaddr.l.google.com @ns1.google.com | grep -o "[^\"]\+")
+ip=$(curl ifconfig.co -s)
 read -p 'Press enter to proceed with installing nginx. Press Ctrl + C to quit'
-sudo apt update
+#sudo apt update
 #sudo apt install curl gnupg2 ca-certificates lsb-release ubuntu-keyring -y
 #curl https://nginx.org/keys/nginx_signing.key | gpg --dearmor \
 #    | sudo tee /usr/share/keyrings/nginx-archive-keyring.gpg >/dev/null
