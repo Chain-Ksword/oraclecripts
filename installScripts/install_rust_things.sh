@@ -5,6 +5,6 @@ NC='\033[0m' # No Color
 echo -e "************************************************************${GREEN}"
 echo -e "Installs dust exa prcs bandwhich and bat"
 read -p "Press enter to continue with installing cargo and rust programs"
-sudo apt update; sudo apt install cargo bandwhich
+sudo apt update; sudo apt install cargo bandwhich grex
 cargo install dust exa procs bandwhich bat
 echo -e "${NC}************************************************************"
