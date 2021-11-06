@@ -1,3 +1,4 @@
+#!/bin/sh
 ip=$(curl ifconfig.co -s)
 read -p 'Press enter to proceed with installing nginx. Press Ctrl + C to quit'
 sudo apt update
