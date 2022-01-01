@@ -7,6 +7,7 @@ sudo zip -rq \
 	/opt/wallabag/\
 	/home/ubuntu/.local/share/{qBittorrent,zoxide}/\
 	/home/ubuntu/discord/Kurisu/config.json\
-	/home/ubuntu/qbit-utils/
+	/home/ubuntu/qbit-utils/\
+        /home/ubuntu/wirehole/
 rclone copy /home/ubuntu/oracleArmBak.zip drive: -Pv
 sudo sed -i "/LAST_BACKUP/c\\LAST_BACKUP='$(date -R)'" /etc/environment
