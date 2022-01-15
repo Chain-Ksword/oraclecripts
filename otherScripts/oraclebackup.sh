@@ -8,6 +8,7 @@ sudo zip -rq \
 	/home/ubuntu/.local/share/{qBittorrent,zoxide}/\
 	/home/ubuntu/discord/Kurisu/config.json\
 	/home/ubuntu/qbit-utils/\
-        /home/ubuntu/wirehole/
+        /home/ubuntu/wirehole/\
+	/home/ubuntu/firefly-iii/
 rclone copy /home/ubuntu/oracleArmBak.zip drive: -Pv
 sudo sed -i "/LAST_BACKUP/c\\LAST_BACKUP='$(date -R)'" /etc/environment
